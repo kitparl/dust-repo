@@ -47,6 +47,6 @@ fruits := [3]string{"apple", "orange", "banana"}
   }
 // To only show the value or the index, you can omit the other output using an underscore (_).
   for _, val := range fruits {
-     fmt.Printf("%v\n", val)
+     fmt.Println("val", val)
   }
 }
