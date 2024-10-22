@@ -3,12 +3,16 @@ package main
 import "fmt"
 
 func main() {
-  var a = "i am a" // var declares 1 or more variables
-  fmt.Println(a)
 
 
-  var b, c int = 1, 2 // can declare multiple variables
-  fmt.Println(b,c)
+// 1. With the var keyword:
+  var v = "i am a" // var declares 1 or more variables
+  fmt.Println(v)
+
+
+  // Go multiple variable declaration
+  var w, x int = 1, 2 // can declare multiple variables
+  fmt.Println(w,x)
 
 
   var d = true
@@ -18,6 +22,7 @@ func main() {
   var e int     // defalut value is 0
   fmt.Println(e)
 
+// 2. With the := sign:
   f := "anything" // The := syntax is shorthand for declaring and assigning a variable. This syntax only avaiable inside functions
   fmt.Println(f)
 
@@ -46,6 +51,35 @@ func main() {
 
   */
 
+  var a string
+  var b int
+  var c bool
 
+  fmt.Println(a) // default value is ""
+  fmt.Println(b) // default value is 0 
+  fmt.Println(c) // default value is false
+
+
+  /*
+  * var
+  * 1. Can used inside and outside functions
+  * 2. Variables declaration and value assignment can be done separately
+  *
+  *
+  * :=
+  * 1. Can only used inside functions
+  * 2. Variables declaration and value assignment can be done together
+  */
+
+
+  // ### Go variable declaration in a Block
+
+  var (
+    rollNo int
+    age int = 1
+    name string = "pranshu"
+  )
+
+  fmt.Println(rollNo, age, name)
 
 }
