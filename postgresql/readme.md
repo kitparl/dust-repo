@@ -109,3 +109,37 @@ WHERE id = 1;
 ```
 DELETE FROM employees where name = 'Pranshu Singh Bisht'
 ```
+
+## 4. Join Operations
+
+#### Inner Join
+
+```
+SELECT e.name, d.department_name
+FROM employees e
+LEFT JOIN departments d ON e.department_id = d.id;
+```
+
+#### Left Join or Left Outer Join
+
+```
+SELECT e.name, d.department_name
+FROM employees e
+LEFT JOIN departments d ON e.department_id = d.id;
+```
+
+#### Right Join or Right Outer Join
+
+```
+SELECT e.name, d.department_name
+FROM employees e
+RIGHT JOIN departments d ON e.department_id = d.id;
+```
+
+#### Full join or Full Outer Join
+
+```
+SELECT e.name, d.department_name
+FROM employees e
+FULL OUTER JOIN departments d ON e.department_id = d.id;
+```
