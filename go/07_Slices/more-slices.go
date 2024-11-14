@@ -26,6 +26,7 @@ fmt.Println(numbers)
   myslice2 := []int{4,5,6}
   myslice3 := append(myslice1, myslice2...)
 
+  fmt.Println("below ---- slice3")
   fmt.Println(myslice3)
 
 // change the length of the slice
