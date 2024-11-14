@@ -6,7 +6,10 @@ import (
  	"sync"
 	"net/http"
 )
+
+var signals = []string{"test"}
 var wg sync.WaitGroup     // Pointers
+var mut sync.Mutex        // Pointers
 
 // Concurrency
 //concurrency is the ability of different parts or units of a program, algorithm, or problem to be executed out-of-order or in partial order, without affecting the outcome
@@ -40,6 +43,7 @@ func main(){
 	}
 
 	wg.Wait()
+	fmt.Println(signals)
 
 }
 
@@ -59,9 +63,13 @@ func getStatusCode(endpoint string){
 
 	if err != nil {
 		fmt.Println("Oops error")
+	}else{
+		mut.Lock()
+		signals = append(signals, endpoint)
+		mut.Unlock()
+		fmt.Println("%d status code for %s", res.StatusCode, endpoint)
 	}
 
-	fmt.Println("%d status code for %s", res.StatusCode, endpoint)
 }
 
 
