@@ -5,6 +5,8 @@ import "fmt"
 func main() {
 	
 	number := 5
+
+	fmt.Println("Value of number in main is", number)
 	case1(number)
 	fmt.Println("Address of number in main is", &number)
 	fmt.Println("After case1, the value of number is", number)
