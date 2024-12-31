@@ -8,7 +8,6 @@ func main(){
 
 
 // go run hello-world.go      it is used to go run 
-
 // go build hello-world.go   it is used to build program in binaries
 
 
