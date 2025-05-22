@@ -277,7 +277,7 @@ import "fmt"; import "os"
 - Go has provided us with a shorter and more elegant way of importing multiple packages known as factoring the keyword. It is stated as:
 
 ```
-mport (
+import (
   "fmt"
   "os"
 )
