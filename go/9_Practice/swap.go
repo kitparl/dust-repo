@@ -3,6 +3,12 @@ package main
 import "fmt"
 
 func main() {
+	
+  var w, x int = 1, 2 // can declare multiple variables
+	fmt.Println(w, x)
+	x, w = w, x
+	fmt.Println(w, x)
+
 
 	// Using third variable
 
