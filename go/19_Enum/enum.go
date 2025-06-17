@@ -20,6 +20,7 @@ func (d Day) String() string {
 }
 
 func main() {
+	fmt.Println(Sunday)
   var today Day = Friday
   fmt.Println(today)
 

@@ -38,6 +38,13 @@ func main() {
   rect.setHeight(2)
   fmt.Println(rect.Area())
 
+
+	// rect.Area(10)
+	//  fmt.Println()
+	// fmt.Println(rect)
+	// rect.setWidthHeight(5)
+	// fmt.Println(rect)
+
 }
 
 

@@ -38,7 +38,7 @@ func main() {
   pass := 10
   fmt.Println(pass)
   addOne(&pass)
-  fmt.Println(pass) 
+  fmt.Println("addOne func", pass) 
 
 
   // #########  Pointer Arithmetic:

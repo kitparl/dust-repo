@@ -4,8 +4,7 @@ import "fmt"
 
 // Generics allows us to write flexible and reusable code that can work with any data type, without sacrificing type safety.
 
-func Print[T any](value T) { // Define the generic function
-  fmt.Println(value)
+func Print[T any](value T) { // Define the generic function fmt.Println(value)
 }
 // T is a type parameter
 // The any cconstraint means that T can be any type
