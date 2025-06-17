@@ -21,3 +21,18 @@
     }
 
 ```
+
+- Useful map methods
+
+1. `put(key, value)`
+2. `get(key)`
+3. `remove(key)`
+4. `size()`
+5. `isEmpty()`
+
+6. `clear()`
+7. `containsKey(key)`
+8. `containsValue(value)`
+
+9. `getOrDefault(key, setDefaultValue)`
+10. `putIfAbsent(key, value)`
